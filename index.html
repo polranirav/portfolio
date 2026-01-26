@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Nirav Polara - AI/ML Engineer & Full-Stack Developer specializing in intelligent financial systems and production-grade ML platforms">
+    <meta name="keywords" content="AI Engineer, ML Developer, Full-Stack Developer, Fintech, Toronto Developer">
+    <meta name="author" content="Nirav Polara">
+
+    <title>Nirav Polara | AI Engineer & Full-Stack Developer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div id="particles-bg" class="particles-bg"></div>
+    <div class="noise-overlay"></div>
+
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <div class="logo-box">
+                    <span class="logo-text">NP</span>
+                    <div class="logo-glow"></div>
+                </div>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#contact" class="nav-cta">Let's Talk</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <!-- Status Badge -->
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    <span>Available for AI Engineer opportunities</span>
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="hero-title">
+                    <span class="hero-line">Hi, I'm</span>
+                    <span class="hero-name">Nirav <span class="name-highlight">Polara</span></span>
+                </h1>
+
+                <!-- Animated Role -->
+                <div class="hero-role">
+                    <span class="role-prefix">I'm a</span>
+                    <span class="typing-wrapper">
+                        <span class="typed-text" id="typed-text"></span>
+                        <span class="cursor">|</span>
+                    </span>
+                </div>
+
+                <!-- Description -->
+                <p class="hero-description"> I focus on turning AI concepts into live code, specializing in <span
+                        class="highlight">agentic workflows</span>,
+                    and
+                    <span class="highlight">RAG pipelines</span>
+                    that bridge the gap between
+                    <span class="highlight">fuzzy ideas</span>
+                    and
+                    <span class="highlight">functional products</span>
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary magnetic">
+                        <span class="btn-content">
+                            <i class="ph ph-rocket-launch"></i>
+                            <span>View My Work</span>
+                        </span>
+                        <div class="btn-glow"></div>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary magnetic">
+                        <span class="btn-content">
+                            <i class="ph ph-paper-plane-tilt"></i>
+                            <span>Get In Touch</span>
+                        </span>
+                    </a>
+                </div>
+
+                <!-- Social Links -->
+                <div class="hero-socials">
+                    <a href="https://github.com/polranirav" target="_blank" class="social-link magnetic"
+                        aria-label="GitHub">
+                        <i class="ph ph-github-logo"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/NiravPolara" target="_blank" class="social-link magnetic"
+                        aria-label="LinkedIn">
+                        <i class="ph ph-linkedin-logo"></i>
+                    </a>
+                    <a href="mailto:polranirav@gmail.com" class="social-link magnetic" aria-label="Email">
+                        <i class="ph ph-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="hero-visual">
+                    <!-- Main Profile Image -->
+                    <div class="profile-wrapper">
+                        <div class="profile-ring"></div>
+                        <div class="profile-ring ring-2"></div>
+                        <div class="profile-image">
+                            <img src="assets/images/profile-image.JPG" alt="Nirav Polara"
+                                onerror="this.src='https://api.dicebear.com/7.x/personas/svg?seed=Nirav&backgroundColor=8B5CF6'">
+                        </div>
+                        <div class="profile-glow"></div>
+                    </div>
+
+                    <!-- Floating Tech Cards -->
+                    <div class="floating-card card-1">
+                        <i class="ph ph-brain"></i>
+                        <span>AI/ML</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="ph ph-code"></i>
+                        <span>Full-Stack</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="ph ph-bank"></i>
+                        <span>Data Analytics</span>
+                    </div>
+                    <div class="floating-card card-4">
+                        <i class="ph ph-chart-line-up"></i>
+                        <span>ML Ops</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">
+                    <i class="ph ph-user"></i>
+                    About Me
+                </span>
+                <h2 class="section-title">
+                    Turning <span class="gradient-text">Problems</span> into <span class="gradient-text">Products</span>
+                </h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="about-image-wrapper">
+                        <div class="about-image">
+                            <img src="assets/images/about-image.JPG" alt="Nirav Polara"
+                                onerror="this.src='https://api.dicebear.com/7.x/personas/svg?seed=Nirav&backgroundColor=8B5CF6'">
+                        </div>
+                        <div class="about-image-border"></div>
+                    </div>
+                </div>
+
+                <div class="about-right">
+                    <div class="about-text">
+                        <p class="about-lead">
+                            Hi, I'm <span class="text-accent">Nirav</span> — a Toronto-based
+                            <span class="text-accent">AI Engineer</span> who builds intelligent systems.
+                        </p>
+                        <p>
+                            I specialize in building production-grade AI applications, from training ML models to
+                            deploying intelligent agents and RAG systems. I write Python daily, work with
+                            LangChain/LangGraph, and deploy using FastAPI and Docker.
+                        </p>
+                        <p>
+                            I believe in learning by building — which is why I'm constantly working on new AI projects,
+                            documenting my journey, and pushing code to GitHub.
+                        </p>
+                    </div>
+
+                    <!-- Simple Stats Row -->
+                    <div class="about-stats-simple">
+                        <div class="stat-simple">
+                            <span class="stat-num">3+</span>
+                            <span class="stat-text">Years Experience</span>
+                        </div>
+                        <div class="stat-simple">
+                            <span class="stat-num">10+</span>
+                            <span class="stat-text">AI Projects Built</span>
+                        </div>
+                        <div class="stat-simple">
+                            <span class="stat-num">15+</span>
+                            <span class="stat-text">Technologies</span>
+                        </div>
+                    </div>
+
+                    <!-- Single CTA -->
+                    <a href="assets/docs/resume.pdf" download class="btn btn-primary download-btn magnetic">
+                        <span class="btn-content">
+                            <i class="ph ph-download-simple"></i>
+                            <span>Download Resume</span>
+                        </span>
+                        <div class="btn-glow"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">
+                    <i class="ph ph-lightning"></i>
+                    Expertise
+                </span>
+                <h2 class="section-title">
+                    Skills & <span class="gradient-text">Technologies</span>
+                </h2>
+            </div>
+
+            <!-- Skills Categories - 9 Logical Clusters -->
+            <div class="skills-showcase skills-9-grid">
+                <!-- Programming & Core Languages -->
+                <div class="skill-category glass-card reveal">
+                    <div class="category-header">
+                        <div class="category-icon ai">
+                            <i class="ph ph-code"></i>
+                        </div>
+                        <h3 class="category-title">Programming & Core Languages</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">Python (Advanced)</span>
+                        <span class="skill-chip">Java</span>
+                        <span class="skill-chip">SQL</span>
+                    </div>
+                </div>
+
+                <!-- AI / ML Frameworks -->
+                <div class="skill-category glass-card reveal">
+                    <div class="category-header">
+                        <div class="category-icon ai">
+                            <i class="ph ph-brain"></i>
+                        </div>
+                        <h3 class="category-title">AI / ML Frameworks</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">PyTorch</span>
+                        <span class="skill-chip">TensorFlow</span>
+                    </div>
+                </div>
+
+                <!-- Generative AI & LLMs -->
+                <div class="skill-category glass-card reveal">
+                    <div class="category-header">
+                        <div class="category-icon ai">
+                            <i class="ph ph-sparkle"></i>
+                        </div>
+                        <h3 class="category-title">Generative AI & LLMs</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">OpenAI</span>
+                        <span class="skill-chip">Anthropic</span>
+                        <span class="skill-chip">Gemini</span>
+                        <span class="skill-chip">RAG</span>
+                        <span class="skill-chip">Prompt Engineering</span>
+                        <span class="skill-chip">Vector Embeddings</span>
+                        <span class="skill-chip">Fine-Tuning (LoRA, QLoRA)</span>
+                    </div>
+                </div>
+
+                <!-- Agentic AI & Orchestration -->
+                <div class="skill-category glass-card reveal">
+                    <div class="category-header">
+                        <div class="category-icon backend">
+                            <i class="ph ph-robot"></i>
+                        </div>
+                        <h3 class="category-title">Agentic AI & Orchestration</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">LangChain</span>
+                        <span class="skill-chip">LangGraph</span>
+                        <span class="skill-chip">LangSmith</span>
+                        <span class="skill-chip">CrewAI</span>
+                    </div>
+                </div>
+
+                <!-- Vector DBs & Retrieval -->
+                <div class="skill-category glass-card reveal">
+                    <div class="category-header">
+                        <div class="category-icon backend">
+                            <i class="ph ph-database"></i>
+                        </div>
+                        <h3 class="category-title">Vector DBs & Retrieval</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">Pinecone</span>
+                        <span class="skill-chip">Weaviate</span>
+                    </div>
+                </div>
+
+                <!-- Backend & API Development -->
+                <div class="skill-category glass-card reveal">
+                    <div class="category-header">
+                        <div class="category-icon frontend">
+                            <i class="ph ph-terminal"></i>
+                        </div>
+                        <h3 class="category-title">Backend & API Development</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">FastAPI</span>
+                        <span class="skill-chip">RESTful APIs</span>
+                        <span class="skill-chip">Microservices</span>
+                    </div>
+                </div>
+
+                <!-- Data Engineering & Big Data -->
+                <div class="skill-category glass-card reveal">
+                    <div class="category-header">
+                        <div class="category-icon frontend">
+                            <i class="ph ph-hard-drives"></i>
+                        </div>
+                        <h3 class="category-title">Data Engineering & Big Data</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">Apache Spark</span>
+                        <span class="skill-chip">Apache Kafka</span>
+                        <span class="skill-chip">Databricks</span>
+                        <span class="skill-chip">ETL/ELT Pipelines</span>
+                    </div>
+                </div>
+
+                <!-- Databases & Storage -->
+                <div class="skill-category glass-card reveal">
+                    <div class="category-header">
+                        <div class="category-icon frontend">
+                            <i class="ph ph-cylinder"></i>
+                        </div>
+                        <h3 class="category-title">Databases & Storage</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">PostgreSQL</span>
+                        <span class="skill-chip">MySQL</span>
+                        <span class="skill-chip">MongoDB</span>
+                        <span class="skill-chip">Oracle</span>
+                        <span class="skill-chip">Redis</span>
+                    </div>
+                </div>
+
+                <!-- MLOps, Cloud & Deployment -->
+                <div class="skill-category glass-card reveal">
+                    <div class="category-header">
+                        <div class="category-icon devops">
+                            <i class="ph ph-cloud"></i>
+                        </div>
+                        <h3 class="category-title">MLOps, Cloud & Deployment</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">Docker</span>
+                        <span class="skill-chip">Kubernetes</span>
+                        <span class="skill-chip">MLflow</span>
+                        <span class="skill-chip">CI/CD for ML</span>
+                        <span class="skill-chip">AWS SageMaker</span>
+                        <span class="skill-chip">Azure AI Foundry</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">
+                    <i class="ph ph-folder-open"></i>
+                    Featured Work
+                </span>
+                <h2 class="section-title">
+                    Projects that <span class="gradient-text">make an impact</span>
+                </h2>
+            </div>
+
+            <!-- Featured Project - TradingPro -->
+            <div class="featured-project glass-card reveal">
+                <div class="project-image-wrapper">
+                    <div class="project-image">
+                        <img src="assets/images/tradingpro.jpg" alt="TradingPro AI Trading Platform"
+                            onerror="this.src='https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link magnetic">
+                                    <i class="ph ph-arrow-square-out"></i>
+                                </a>
+                                <a href="https://github.com/polranirav/trading-signal" target="_blank"
+                                    class="project-link magnetic">
+                                    <i class="ph ph-github-logo"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-badge">
+                        <i class="ph ph-star"></i>
+                        Featured Project
+                    </div>
+                </div>
+
+                <div class="project-content">
+                    <span class="project-category">AI/ML • FinTech • Trading</span>
+                    <h3 class="project-title">TradingPro - AI-Powered Trading Platform</h3>
+
+                    <p class="project-description">
+                        Orchestrated <strong>LangGraph multi-agent workflows</strong> to automate strategy synthesis,
+                        improving signal precision from 55% to 65%.
+                        Developed Temporal Fusion Transformers for time-series forecasting with <strong>60% directional
+                            accuracy</strong>.
+                        Engineered RAG pipeline using Pinecone to ingest 50k+ news sources, reducing research latency by
+                        70%.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">FinBERT</span>
+                        <span class="tech-tag">XGBoost</span>
+                        <span class="tech-tag">LangGraph</span>
+                        <span class="tech-tag">Pinecone</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Celery</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Side Project: FraudGuard -->
+                <div class="project-card glass-card reveal" data-tilt>
+                    <div class="project-image">
+                        <img src="assets/images/fraudguard.jpg" alt="FraudGuard Platform"
+                            onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link magnetic"><i class="ph ph-arrow-square-out"></i></a>
+                                <a href="https://github.com/polranirav/fraudguard" target="_blank"
+                                    class="project-link magnetic"><i class="ph ph-github-logo"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">AI/ML • Real-Time Systems</span>
+                        <h3 class="project-title">FraudGuard - Real-Time Fraud Detection</h3>
+                        <p class="project-description">
+                            Engineered real-time fraud platform using Flink and XGBoost, handling 50k+ TPS with
+                            sub-second latency.
+                            Reduced financial risk by 18% through Graph Neural Networks and explainable AI frameworks.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Apache Flink</span>
+                            <span class="tech-tag">Kafka</span>
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">Azure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Side Project: Agentic RAG Knowledge Assistant -->
+                <div class="project-card glass-card reveal" data-tilt>
+                    <div class="project-image">
+                        <img src="assets/images/rag-project.jpg" alt="Agentic RAG Knowledge Assistant"
+                            onerror="this.src='https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link magnetic"><i class="ph ph-arrow-square-out"></i></a>
+                                <a href="https://github.com/polranirav/agentic-rag-assistant" target="_blank"
+                                    class="project-link magnetic"><i class="ph ph-github-logo"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">GenAI • LangGraph • Enterprise</span>
+                        <h3 class="project-title">Agentic RAG Knowledge Assistant</h3>
+                        <p class="project-description">
+                            Self-correcting AI assistant with GraphRAG (Pinecone + Neo4j). Router → Grader → Web
+                            Fallback workflow eliminates hallucinations.
+                            Real-time AI decision tracing with Arize Phoenix observability.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">LangGraph</span>
+                            <span class="tech-tag">Pinecone</span>
+                            <span class="tech-tag">Neo4j</span>
+                            <span class="tech-tag">FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Side Project: AI Medical Diagnosis System -->
+                <div class="project-card glass-card reveal" data-tilt>
+                    <div class="project-image">
+                        <img src="assets/images/ai-medical.jpg" alt="AI Medical Diagnosis System"
+                            onerror="this.src='https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link magnetic"><i class="ph ph-arrow-square-out"></i></a>
+                                <a href="https://github.com/polranirav/ai-medical-diagnosis" target="_blank"
+                                    class="project-link magnetic"><i class="ph ph-github-logo"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Deep Learning • Healthcare</span>
+                        <h3 class="project-title">AI Medical Diagnosis System</h3>
+                        <p class="project-description">
+                            Automated disease detection from medical images using deep learning.
+                            Multi-architecture support (ResNet18, DenseNet121, EfficientNet-B0) with 83.2% accuracy and
+                            0.962 ROC AUC.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Hydra</span>
+                            <span class="tech-tag">W&B</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View More CTA -->
+            <div class="projects-cta">
+                <a href="https://github.com/polranirav" target="_blank" class="btn btn-secondary magnetic">
+                    <span class="btn-content">
+                        <i class="ph ph-github-logo"></i>
+                        <span>View All Projects on GitHub</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">
+                    <i class="ph ph-briefcase"></i>
+                    Career Journey
+                </span>
+                <h2 class="section-title">
+                    Work <span class="gradient-text">Experience</span>
+                </h2>
+            </div>
+
+            <div class="timeline">
+                <!-- Experience 0: Independent AI Engineering -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <div class="marker-dot active"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div class="timeline-icon" style="--icon-color: #10B981">
+                                <i class="ph ph-rocket-launch"></i>
+                            </div>
+                            <div class="timeline-info">
+                                <h3 class="timeline-title">Independent AI Engineer</h3>
+                                <span class="timeline-company">Self-Directed Learning & Building</span>
+                                <span class="timeline-date current">
+                                    <i class="ph ph-calendar"></i>
+                                    May 2024 – Present
+                                </span>
+                            </div>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Building production-grade AI/ML projects across multiple domains including FinTech,
+                                Healthcare, and Enterprise Systems</li>
+                            <li>Mastering vibe coding with AI-assisted development tools — Cursor, Claude, and
+                                Antigravity for rapid prototyping</li>
+                            <li>Developing end-to-end GenAI applications with LangChain, LangGraph, and RAG
+                                architectures</li>
+                            <li>Continuously learning & documenting the AI engineering journey through hands-on project
+                                building</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span class="tech-small">LangChain</span>
+                            <span class="tech-small">LangGraph</span>
+                            <span class="tech-small">Cursor AI</span>
+                            <span class="tech-small">Claude</span>
+                            <span class="tech-small">RAG</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 1: Techy Panther -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div class="timeline-icon" style="--icon-color: #8B5CF6">
+                                <i class="ph ph-code"></i>
+                            </div>
+                            <div class="timeline-info">
+                                <h3 class="timeline-title">Software Developer</h3>
+                                <span class="timeline-company">Techy Panther, Ahmedabad, India</span>
+                                <span class="timeline-date">
+                                    <i class="ph ph-calendar"></i>
+                                    Sep 2021 – Sep 2023
+                                </span>
+                            </div>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Engineered high-performance Python backends for mobile applications, optimizing API
+                                response times by 30%</li>
+                            <li>Collaborated on cross-platform architectures, integrating third-party AI/ML APIs for iOS
+                                and Android</li>
+                            <li>Designed scalable database schemas in SQL, ensuring data integrity for analytics-driven
+                                features</li>
+                            <li>Automated deployment pipelines using CI/CD tools, reducing production deployment cycles
+                            </li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span class="tech-small">Python</span>
+                            <span class="tech-small">SQL</span>
+                            <span class="tech-small">AI/ML APIs</span>
+                            <span class="tech-small">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2: Webunity InfoTech -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div class="timeline-icon" style="--icon-color: #10B981">
+                                <i class="ph ph-database"></i>
+                            </div>
+                            <div class="timeline-info">
+                                <h3 class="timeline-title">Software Developer</h3>
+                                <span class="timeline-company">Webunity InfoTech, Surat, India</span>
+                                <span class="timeline-date">
+                                    <i class="ph ph-calendar"></i>
+                                    Apr 2019 – Feb 2021
+                                </span>
+                            </div>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Built robust ETL data pipelines to synchronize inventory and sales records, reducing
+                                manual data errors by 15%</li>
+                            <li>Optimized server-side logic and database queries, significantly lowering latency for
+                                high-traffic e-commerce</li>
+                            <li>Integrated Google Analytics APIs to ingest user behavior data for downstream reporting
+                            </li>
+                            <li>Managed complex data migrations during platform upgrades with 100% data preservation and
+                                zero downtime</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span class="tech-small">ETL Pipelines</span>
+                            <span class="tech-small">SQL</span>
+                            <span class="tech-small">Data Migration</span>
+                            <span class="tech-small">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">
+                    <i class="ph ph-graduation-cap"></i>
+                    Academic Background
+                </span>
+                <h2 class="section-title">
+                    Education & <span class="gradient-text">Credentials</span>
+                </h2>
+            </div>
+
+            <div class="education-grid">
+                <!-- Master's Degree Card -->
+                <div class="education-card glass-card reveal">
+                    <div class="edu-badge">Master's</div>
+                    <div class="edu-icon">
+                        <i class="ph ph-graduation-cap"></i>
+                    </div>
+                    <h3 class="edu-degree">Master of Engineering</h3>
+                    <p class="edu-field">Electrical and Computer Engineering</p>
+                    <p class="edu-school">University of Windsor, Canada</p>
+                    <span class="edu-date">
+                        <i class="ph ph-calendar"></i>
+                        Jan 2024 – Apr 2025
+                    </span>
+                </div>
+
+                <!-- Bachelor's Degree Card -->
+                <div class="education-card glass-card reveal">
+                    <div class="edu-badge bachelors">Bachelor's</div>
+                    <div class="edu-icon bachelors-icon">
+                        <i class="ph ph-graduation-cap"></i>
+                    </div>
+                    <h3 class="edu-degree">Bachelor of Engineering</h3>
+                    <p class="edu-field">Computer Engineering</p>
+                    <p class="edu-school">Gujarat Technological University, India</p>
+                    <span class="edu-date">
+                        <i class="ph ph-calendar"></i>
+                        Aug 2015 – Sep 2019
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Journey Section -->
+    <section id="learning" class="learning-journey">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">
+                    <i class="ph ph-road-horizon"></i>
+                    Never-Ending Journey
+                </span>
+                <h2 class="section-title">
+                    🚀 AI <span class="gradient-text">Learning Journey</span>
+                </h2>
+                <p class="section-subtitle">From Python fundamentals to Generative AI — documenting my complete AI/ML
+                    learning path</p>
+            </div>
+
+            <!-- Journey Path -->
+            <div class="journey-path">
+                <div class="journey-line"></div>
+
+                <!-- Phase 1: Foundation -->
+                <div class="journey-phase reveal">
+                    <div class="phase-marker">
+                        <div class="phase-number">01</div>
+                        <div class="phase-pulse"></div>
+                    </div>
+                    <div class="phase-card glass-card">
+                        <div class="phase-header">
+                            <div class="phase-icon" style="--phase-color: #8B5CF6">
+                                <i class="ph ph-code"></i>
+                            </div>
+                            <div class="phase-meta">
+                                <span class="phase-label">Foundation</span>
+                                <h3 class="phase-title">Programming & DSA</h3>
+                            </div>
+                        </div>
+                        <p class="phase-desc">Python fundamentals, OOP, data structures, algorithms, Git workflows, and
+                            version control.</p>
+                        <div class="phase-topics">
+                            <span>Python</span>
+                            <span>DSA</span>
+                            <span>Git</span>
+                            <span>SQL</span>
+                        </div>
+                        <div class="phase-folders">
+                            <i class="ph ph-folder"></i> 20+ Python modules • 14 DSA topics
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 2: Data Science -->
+                <div class="journey-phase phase-right reveal">
+                    <div class="phase-marker">
+                        <div class="phase-number">02</div>
+                        <div class="phase-pulse"></div>
+                    </div>
+                    <div class="phase-card glass-card">
+                        <div class="phase-header">
+                            <div class="phase-icon" style="--phase-color: #10B981">
+                                <i class="ph ph-chart-bar"></i>
+                            </div>
+                            <div class="phase-meta">
+                                <span class="phase-label">Data Science</span>
+                                <h3 class="phase-title">NumPy, Pandas & Statistics</h3>
+                            </div>
+                        </div>
+                        <p class="phase-desc">Data manipulation, visualization, probability distributions, and
+                            hypothesis testing.</p>
+                        <div class="phase-topics">
+                            <span>NumPy</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                            <span>Statistics</span>
+                        </div>
+                        <div class="phase-folders">
+                            <i class="ph ph-folder"></i> Feature engineering • EDA • Data cleaning
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 3: ML & Deep Learning -->
+                <div class="journey-phase reveal">
+                    <div class="phase-marker">
+                        <div class="phase-number">03</div>
+                        <div class="phase-pulse"></div>
+                    </div>
+                    <div class="phase-card glass-card">
+                        <div class="phase-header">
+                            <div class="phase-icon" style="--phase-color: #F59E0B">
+                                <i class="ph ph-brain"></i>
+                            </div>
+                            <div class="phase-meta">
+                                <span class="phase-label">Advanced AI</span>
+                                <h3 class="phase-title">ML, Deep Learning & PyTorch</h3>
+                            </div>
+                        </div>
+                        <p class="phase-desc">Neural networks, CNNs, RNNs, model training, FastAPI deployment, and
+                            production ML.</p>
+                        <div class="phase-topics">
+                            <span>PyTorch</span>
+                            <span>FastAPI</span>
+                            <span>Deep Learning</span>
+                            <span>MLOps</span>
+                        </div>
+                        <div class="phase-folders">
+                            <i class="ph ph-folder"></i> End-to-end ML projects • Model deployment
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 4: Generative AI -->
+                <div class="journey-phase phase-right reveal">
+                    <div class="phase-marker active">
+                        <div class="phase-number">04</div>
+                        <div class="phase-pulse active"></div>
+                    </div>
+                    <div class="phase-card glass-card active-phase">
+                        <div class="phase-header">
+                            <div class="phase-icon" style="--phase-color: #EC4899">
+                                <i class="ph ph-robot"></i>
+                            </div>
+                            <div class="phase-meta">
+                                <span class="phase-label">Current Focus</span>
+                                <h3 class="phase-title">Generative AI & LLMs</h3>
+                            </div>
+                        </div>
+                        <p class="phase-desc">LangChain, LangGraph, RAG pipelines, autonomous agents, and stateful LLM
+                            workflows.</p>
+                        <div class="phase-topics">
+                            <span>LangChain</span>
+                            <span>LangGraph</span>
+                            <span>RAG</span>
+                            <span>Agents</span>
+                        </div>
+                        <div class="phase-folders">
+                            <i class="ph ph-folder"></i> LLM orchestration • Multi-agent systems
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Journey Continues -->
+                <div class="journey-continues">
+                    <div class="continues-line"></div>
+                    <span class="continues-text">
+                        <i class="ph ph-infinity"></i>
+                        The journey never ends...
+                    </span>
+                </div>
+            </div>
+
+            <!-- GitHub CTA -->
+            <div class="learning-cta">
+                <a href="https://github.com/polranirav/AI-Learning-Journey" target="_blank"
+                    class="btn btn-primary magnetic">
+                    <span class="btn-content">
+                        <i class="ph ph-github-logo"></i>
+                        <span>Explore Full Learning Repository</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">
+                    <i class="ph ph-envelope"></i>
+                    Get In Touch
+                </span>
+                <h2 class="section-title">
+                    Let's build something <span class="gradient-text">amazing</span> together
+                </h2>
+                <p class="contact-subtitle">
+                    I'm currently open to new opportunities and exciting projects. Let's connect!
+                </p>
+            </div>
+
+            <!-- Compact Contact Cards - Single Row -->
+            <div class="contact-row">
+                <a href="mailto:polranirav@gmail.com" class="contact-card glass-card magnetic">
+                    <div class="contact-card-icon">
+                        <i class="ph ph-envelope"></i>
+                    </div>
+                    <div class="contact-card-info">
+                        <span class="contact-card-label">Email</span>
+                        <span class="contact-card-value">polranirav@gmail.com</span>
+                    </div>
+                </a>
+
+                <a href="https://linkedin.com/in/NiravPolara" target="_blank" class="contact-card glass-card magnetic">
+                    <div class="contact-card-icon linkedin">
+                        <i class="ph ph-linkedin-logo"></i>
+                    </div>
+                    <div class="contact-card-info">
+                        <span class="contact-card-label">LinkedIn</span>
+                        <span class="contact-card-value">in/NiravPolara</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/polranirav" target="_blank" class="contact-card glass-card magnetic">
+                    <div class="contact-card-icon github">
+                        <i class="ph ph-github-logo"></i>
+                    </div>
+                    <div class="contact-card-info">
+                        <span class="contact-card-label">GitHub</span>
+                        <span class="contact-card-value">polranirav</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="contact-cta">
+                <a href="mailto:polranirav@gmail.com" class="btn btn-primary btn-large magnetic">
+                    <span class="btn-content">
+                        <i class="ph ph-paper-plane-tilt"></i>
+                        <span>Start a Conversation</span>
+                    </span>
+                    <div class="btn-glow"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">NP</span>
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/polranirav" target="_blank" class="social-link magnetic">
+                        <i class="ph ph-github-logo"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/NiravPolara" target="_blank" class="social-link magnetic">
+                        <i class="ph ph-linkedin-logo"></i>
+                    </a>
+                    <a href="mailto:polranirav@gmail.com" class="social-link magnetic">
+                        <i class="ph ph-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nirav Polara. All rights reserved.</p>
+                <p>Made with <span class="heart">❤️</span> in Toronto</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Resume Preview Modal -->
+    <div class="resume-modal" id="resume-modal">
+        <div class="resume-overlay"></div>
+        <div class="resume-container">
+            <div class="resume-header">
+                <h3><i class="ph ph-file-pdf"></i> Resume Preview</h3>
+                <div class="resume-actions">
+                    <a href="assets/docs/resume.pdf" download class="btn btn-primary magnetic">
+                        <span class="btn-content">
+                            <i class="ph ph-download-simple"></i>
+                            <span>Download PDF</span>
+                        </span>
+                    </a>
+                    <button class="resume-close" aria-label="Close">
+                        <i class="ph ph-x"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="resume-body">
+                <div class="resume-preview">
+                    <!-- Try to load PDF, fallback to placeholder -->
+                    <object data="assets/docs/resume.pdf" type="application/pdf" width="100%" height="100%">
+                        <div class="resume-placeholder">
+                            <i class="ph ph-file-pdf"></i>
+                            <h4>Nirav Polara</h4>
+                            <p>AI/ML Engineer & Full-Stack Developer</p>
+                            <p style="margin-top: 20px; font-size: 0.9rem;">
+                                Click "Download PDF" above to get the full resume
+                            </p>
+                        </div>
+                    </object>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
