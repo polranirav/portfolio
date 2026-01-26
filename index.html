@@ -193,58 +193,55 @@
                 </h2>
             </div>
 
-            <div class="about-content">
-                <div class="about-left">
-                    <div class="about-image-wrapper">
-                        <div class="about-image">
+            <div class="about-grid">
+                <!-- Left: Image with decorative elements -->
+                <div class="about-image-section">
+                    <div class="about-image-container">
+                        <div class="about-image-frame">
                             <img src="assets/images/about-image.JPG" alt="Nirav Polara"
                                 onerror="this.src='https://api.dicebear.com/7.x/personas/svg?seed=Nirav&backgroundColor=8B5CF6'">
                         </div>
-                        <div class="about-image-border"></div>
+                        <div class="image-glow"></div>
+                        <div class="image-dots"></div>
                     </div>
                 </div>
 
-                <div class="about-right">
-                    <div class="about-text">
-                        <p class="about-lead">
-                            Hi, I'm <span class="text-accent">Nirav</span> — a Toronto-based
-                            <span class="text-accent">AI Engineer</span> who builds intelligent systems.
-                        </p>
+                <!-- Right: Content -->
+                <div class="about-content-section">
+                    <h3 class="about-headline">
+                        Hi, I'm <span class="name-gradient">Nirav</span> 👋
+                    </h3>
+                    <p class="about-tagline">
+                        A Toronto-based <span class="tag-highlight">AI Engineer</span> who builds intelligent systems
+                        that solve real problems.
+                    </p>
+
+                    <div class="about-description">
                         <p>
-                            I specialize in building production-grade AI applications, from training ML models to
-                            deploying intelligent agents and RAG systems. I write Python daily, work with
-                            LangChain/LangGraph, and deploy using FastAPI and Docker.
-                        </p>
-                        <p>
-                            I believe in learning by building — which is why I'm constantly working on new AI projects,
-                            documenting my journey, and pushing code to GitHub.
+                            I design and deploy production AI models, build intelligent agents, architect RAG
+                            applications, integrate AI capabilities into existing platforms, and develop AI-native
+                            applications. This work is built on a strong foundation of backend engineering, complemented
+                            by frontend development when needed. I architect and operate cloud infrastructure that
+                            powers web, mobile, and desktop applications.
                         </p>
                     </div>
 
-                    <!-- Simple Stats Row -->
-                    <div class="about-stats-simple">
-                        <div class="stat-simple">
-                            <span class="stat-num">3+</span>
-                            <span class="stat-text">Years Experience</span>
-                        </div>
-                        <div class="stat-simple">
-                            <span class="stat-num">10+</span>
-                            <span class="stat-text">AI Projects Built</span>
-                        </div>
-                        <div class="stat-simple">
-                            <span class="stat-num">15+</span>
-                            <span class="stat-text">Technologies</span>
-                        </div>
+                    <!-- CTA Buttons -->
+                    <div class="about-actions">
+                        <a href="assets/docs/resume.pdf" download class="btn btn-primary magnetic">
+                            <span class="btn-content">
+                                <i class="ph ph-download-simple"></i>
+                                <span>Download Resume</span>
+                            </span>
+                            <div class="btn-glow"></div>
+                        </a>
+                        <a href="#contact" class="btn btn-outline magnetic">
+                            <span class="btn-content">
+                                <i class="ph ph-envelope-simple"></i>
+                                <span>Get In Touch</span>
+                            </span>
+                        </a>
                     </div>
-
-                    <!-- Single CTA -->
-                    <a href="assets/docs/resume.pdf" download class="btn btn-primary download-btn magnetic">
-                        <span class="btn-content">
-                            <i class="ph ph-download-simple"></i>
-                            <span>Download Resume</span>
-                        </span>
-                        <div class="btn-glow"></div>
-                    </a>
                 </div>
             </div>
         </div>
@@ -429,7 +426,7 @@
             <div class="featured-project glass-card reveal">
                 <div class="project-image-wrapper">
                     <div class="project-image">
-                        <img src="assets/images/tradingpro.jpg" alt="TradingPro AI Trading Platform"
+                        <img src="assets/images/trading-signal.jpg" alt="Trading Signal AI Platform"
                             onerror="this.src='https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800'">
                         <div class="project-overlay">
                             <div class="project-links">
@@ -512,7 +509,7 @@
                 <!-- Side Project: Agentic RAG Knowledge Assistant -->
                 <div class="project-card glass-card reveal" data-tilt>
                     <div class="project-image">
-                        <img src="assets/images/rag-project.jpg" alt="Agentic RAG Knowledge Assistant"
+                        <img src="assets/images/rag.jpg" alt="Agentic RAG Knowledge Assistant"
                             onerror="this.src='https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600'">
                         <div class="project-overlay">
                             <div class="project-links">
@@ -536,6 +533,37 @@
                             <span class="tech-tag">Pinecone</span>
                             <span class="tech-tag">Neo4j</span>
                             <span class="tech-tag">FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Side Project: AutoSiteX -->
+                <div class="project-card glass-card reveal" data-tilt>
+                    <div class="project-image">
+                        <img src="assets/images/autositex.jpg" alt="AutoSiteX AI Web Generator"
+                            onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link magnetic"><i class="ph ph-arrow-square-out"></i></a>
+                                <a href="https://github.com/polranirav/autositex" target="_blank"
+                                    class="project-link magnetic"><i class="ph ph-github-logo"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">GenAI • LangGraph • Automation</span>
+                        <h3 class="project-title">AutoSiteX — AI Web Generator</h3>
+                        <p class="project-description">
+                            AI-driven generator that transforms natural-language prompts into fully functional websites.
+                            Integrated GPT with LangChain/LangGraph for modular orchestration. Automated frontend
+                            creation with organized output directories.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">LangGraph</span>
+                            <span class="tech-tag">LangSmith</span>
+                            <span class="tech-tag">Pydantic</span>
                         </div>
                     </div>
                 </div>
@@ -662,7 +690,7 @@
                         <ul class="timeline-achievements">
                             <li>Engineered high-performance Python backends for mobile applications, optimizing API
                                 response times by 30%</li>
-                            <li>Collaborated on cross-platform architectures, integrating third-party AI/ML APIs for iOS
+                            <li>Collaborated on cross-platform architectures, integrating third-party APIs for iOS
                                 and Android</li>
                             <li>Designed scalable database schemas in SQL, ensuring data integrity for analytics-driven
                                 features</li>
@@ -672,7 +700,7 @@
                         <div class="timeline-tech">
                             <span class="tech-small">Python</span>
                             <span class="tech-small">SQL</span>
-                            <span class="tech-small">AI/ML APIs</span>
+                            <span class="tech-small">APIs</span>
                             <span class="tech-small">CI/CD</span>
                         </div>
                     </div>
@@ -699,20 +727,23 @@
                             </div>
                         </div>
                         <ul class="timeline-achievements">
-                            <li>Built robust ETL data pipelines to synchronize inventory and sales records, reducing
-                                manual data errors by 15%</li>
-                            <li>Optimized server-side logic and database queries, significantly lowering latency for
-                                high-traffic e-commerce</li>
-                            <li>Integrated Google Analytics APIs to ingest user behavior data for downstream reporting
+                            <li>Developed, customized, and maintained robust e-commerce platforms using WordPress,
+                                Shopify,
+                                and WooCommerce, resulting in improved usability and measurable increases in customer
+                                engagement.</li>
+                            <li>Applied performance optimization techniques and implemented comprehensive SEO
+                                strategies,
+                                successfully driving organic traffic and contributing to business growth objectives.
                             </li>
-                            <li>Managed complex data migrations during platform upgrades with 100% data preservation and
-                                zero downtime</li>
+                            <li>Managed client relationships, translating business needs into tailored, results-driven
+                                digital solutions
+                                and ensuring high client satisfaction.</li>
                         </ul>
                         <div class="timeline-tech">
-                            <span class="tech-small">ETL Pipelines</span>
+                            <span class="tech-small">WordPress & Shopify</span>
                             <span class="tech-small">SQL</span>
-                            <span class="tech-small">Data Migration</span>
-                            <span class="tech-small">Analytics</span>
+                            <span class="tech-small">SEO</span>
+                            <span class="tech-small">Php</span>
                         </div>
                     </div>
                 </div>
